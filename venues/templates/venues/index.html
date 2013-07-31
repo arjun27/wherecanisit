@@ -1,0 +1,9 @@
+{% if latest %}
+	<ul>
+	{% for venue in latest %}
+		<li><a href="/venues/{{ venue.id }}/">{{ venue.name }}</a></li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>No venues.</p>
+{% endif %}
